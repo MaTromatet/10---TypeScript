@@ -1,0 +1,12 @@
+// initialise mon projet et créé le "package.json"
+npm init -y 
+
+//installer la dépendance typescript (créé le package "node_modules")
+npm install typescript --save-dev
+
+//convertir du TypeScript en JavaScript (créé le fichier interface.js dans le dossier "dist") 
+npx tsc src/interface.ts --outDir dist
+
+//pour eviter de retaper toujours ca, on peut créer un fichier "tsconfig.json" qui contient les informations pour compiler le projet
+// alors pour compiler : (--watch => des qu'il y a des modifications dans le fichier tsconfig ou fichier .ts , il recompile)
+npx tsc --watch

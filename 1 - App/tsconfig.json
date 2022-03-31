@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        //"sourceMap": true,
+        //"moduleResolution": "node",
+        "target": "es5", // cible sur quelle version JS pour le navigateur
+        "noEmitOnError": false, //ne compile pas si il y a des erreurs dans le fichier .ts
+        //"strict": true //active un tas de règles et peut etre contraignant (à passer à false si aucune solution) ex : tout doit être typé
+    },
+
+    "files":[
+        "src/app.ts"
+    ]
+
+    
+}
